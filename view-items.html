@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Items - BMSIT Lost and Found</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="view-items.html">View Items</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main aria-label="Lost and Found Items">
+        <h1>Lost and Found Items</h1>
+        <div class="search-filter">
+            <input type="text" id="search-input" placeholder="Search items...">
+            <select id="filter-type">
+                <option value="all">All Items</option>
+                <option value="lost">Lost Items</option>
+                <option value="found">Found Items</option>
+            </select>
+        </div>
+        <div id="items-container" class="items-grid"></div>
+        <p id="no-items-message" class="hidden">No items found.</p>
+        <div class="pagination">
+            <button id="load-more" class="button">Load More</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 BMSIT Lost and Found. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
